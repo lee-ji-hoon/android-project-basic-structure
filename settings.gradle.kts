@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "android-project-basic-structure"
 include(":app")
- 
+include(":library")
+include(":library:lint")

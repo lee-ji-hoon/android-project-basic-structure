@@ -1,10 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":design-system:sample")
-
-
-include(":feature:sample")
-
 
 pluginManagement {
     includeBuild("build-logic")
@@ -27,8 +22,10 @@ include(":app")
 include(":core")
 include(":core:model")
 include(":core:data")
+include(":feature:sample")
 include(":core:domain")
 include(":feature")
 include(":design-system")
+include(":design-system:sample")
 include(":library")
 include(":library:lint")

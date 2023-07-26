@@ -6,7 +6,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
 @Suppress("UNUSED")
-class AndroidLibraryConventionPlugin : Plugin<Project> {
+class AndroidLibraryComposeConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
@@ -15,6 +15,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             }
 
             extensions.configure<LibraryExtension> {
+                configureAndroidCompose(this)
                 configureKotlinAndroid(this)
             }
         }

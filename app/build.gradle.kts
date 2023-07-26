@@ -2,6 +2,7 @@
 plugins {
     id("android-project-basic-structure.android.application")
     id("android-project-basic-structure.android.hilt")
+    // TODO ksp 적용
 }
 
 android {

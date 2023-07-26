@@ -15,3 +15,24 @@ dependencies {
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.hilt.gradlePlugin)
 }
+
+gradlePlugin {
+    plugins {
+        register("androidApplication") {
+            id = "androidProjectBasicStructure.android.application"
+            implementationClass = "AndroidConventionPlugin"
+        }
+        register("androidApplicationCompose") {
+            id = "androidProjectBasicStructure.android.application.compose"
+            implementationClass = "AndroidComposeConventionPlugin"
+        }
+        register("androidLibrary") {
+            id = "androidProjectBasicStructure.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("androidHilt") {
+            id = "androidProjectBasicStructure.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
+    }
+}

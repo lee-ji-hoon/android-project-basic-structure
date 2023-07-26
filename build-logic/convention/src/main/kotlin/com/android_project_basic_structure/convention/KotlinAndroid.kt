@@ -1,4 +1,4 @@
-package com.convention
+package com.android_project_basic_structure.convention
 
 import com.android.build.api.dsl.CommonExtension
 

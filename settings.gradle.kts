@@ -1,6 +1,7 @@
 @file:Suppress("UnstableApiUsage")
 
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google()
         mavenCentral()
@@ -17,7 +18,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "android-project-basic-structure"
 include(":app")
-include(":build-logic")
-include(":build-logic:convention")
 include(":library")
 include(":library:lint")

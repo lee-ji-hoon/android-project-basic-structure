@@ -1,10 +1,12 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    id("kotlin")
+    id("android-project-basic-structure.android.library")
+}
+
+android {
+    namespace = "com.android_project_basic_structure.library.lint"
 }
 
 dependencies {
-    compileOnly("org.jetbrains.kotlin:kotlin-stdlib:1.8.22")
-    compileOnly("com.android.tools.lint:lint-api:31.0.2")
-    compileOnly("com.android.tools.lint:lint-checks:31.0.2")
+    compileOnly(libs.bundles.lint)
 }

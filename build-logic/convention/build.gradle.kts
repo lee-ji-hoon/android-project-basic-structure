@@ -19,19 +19,19 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "androidProjectBasicStructure.android.application"
+            id = "android-project-basic-structure.android.application"
             implementationClass = "AndroidConventionPlugin"
         }
         register("androidApplicationCompose") {
-            id = "androidProjectBasicStructure.android.application.compose"
+            id = "android-project-basic-structure.android.application.compose"
             implementationClass = "AndroidComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "androidProjectBasicStructure.android.library"
+            id = "android-project-basic-structure.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidHilt") {
-            id = "androidProjectBasicStructure.android.hilt"
+            id = "android-project-basic-structure.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
     }

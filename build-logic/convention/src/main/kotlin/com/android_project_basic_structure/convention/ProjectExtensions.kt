@@ -10,7 +10,8 @@ import org.jetbrains.kotlin.gradle.plugin.KaptExtension
 val Project.libs
     get() = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
-internal fun Project.kapt(
+@Suppress("RemoveRedundantBackticks")
+internal fun Project.`kapt`(
     configure: Action<KaptExtension>,
 ) {
     (this as ExtensionAware).extensions.configure("kapt", configure)

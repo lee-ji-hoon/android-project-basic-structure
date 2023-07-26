@@ -1,5 +1,5 @@
 [versions]
-agp = "8.2.0-alpha04"
+agp = "8.2.0-alpha13"
 kotlin = "1.8.0"
 core-ktx = "1.9.0"
 junit = "4.13.2"
@@ -11,6 +11,8 @@ lint-checks = "31.0.2"
 material = "1.9.0"
 constraintlayout = "2.1.4"
 
+dagger = "2.46.1"
+
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -21,6 +23,11 @@ lint-api = { module = "com.android.tools.lint:lint-api", version.ref = "lint-api
 lint-checks = { module = "com.android.tools.lint:lint-checks", version.ref = "lint-checks" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# gradle plugins
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+hilt-gradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "dagger" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

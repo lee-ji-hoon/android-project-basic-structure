@@ -30,6 +30,10 @@ gradlePlugin {
             id = "android-project-basic-structure.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+        register("androidLibraryCompose") {
+            id = "android-project-basic-structure.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
         register("androidHilt") {
             id = "android-project-basic-structure.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"

@@ -7,5 +7,7 @@ android {
 }
 
 dependencies {
-   // TODO data와 model 모듈 들어오면 의존성 추가
+    implementation(projects.core.model)
+    implementation(projects.core.data)
+    implementation(libs.javax.inject)
 }

@@ -1,5 +1,11 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":design-system:sample")
+
+
+include(":feature:sample")
+
+
 pluginManagement {
     includeBuild("build-logic")
     repositories {

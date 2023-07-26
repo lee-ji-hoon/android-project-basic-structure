@@ -8,5 +8,5 @@ android {
 }
 
 dependencies {
-    // TODO model 만들어지면 넣어두기
+    implementation(projects.core.data)
 }

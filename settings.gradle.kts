@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":core:domain")
+
+
 pluginManagement {
     includeBuild("build-logic")
     repositories {
@@ -18,5 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "android-project-basic-structure"
 include(":app")
+include(":core")
+include(":feature")
+include(":design-system")
 include(":library")
 include(":library:lint")

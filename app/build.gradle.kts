@@ -17,8 +17,10 @@ android {
 
 dependencies {
     lintChecks(project(":library:lint"))
+    implementation(projects.library.test)
 
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+    implementation(libs.timber)
 }

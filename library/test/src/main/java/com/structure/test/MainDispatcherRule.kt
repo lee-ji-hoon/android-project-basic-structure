@@ -16,24 +16,24 @@
 
 package com.structure.test
 
+import io.kotest.core.listeners.TestListener
+import io.kotest.core.spec.Spec
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestDispatcher
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
-import org.junit.rules.TestWatcher
-import org.junit.runner.Description
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class MainDispatcherRule(
     private val testDispatcher: TestDispatcher = UnconfinedTestDispatcher(),
-) : TestWatcher() {
-    override fun starting(description: Description) {
+) : TestListener {
+    override suspend fun beforeSpec(spec: Spec) {
         Dispatchers.setMain(testDispatcher)
     }
 
-    override fun finished(description: Description) {
+    override suspend fun afterSpec(spec: Spec) {
         Dispatchers.resetMain()
     }
 }

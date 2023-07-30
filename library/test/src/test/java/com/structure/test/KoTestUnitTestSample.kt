@@ -5,6 +5,7 @@ import io.kotest.matchers.shouldBe
 import kotlin.math.roundToInt
 
 class KoTestUnitTestSample : BehaviorSpec({
+    listeners(MainDispatcherRule())
     given("100점이 만점인 상황에서") {
         val totalMarks = 100
         `when`("학생의 점수가") {
@@ -44,7 +45,8 @@ class KoTestUnitTestSample : BehaviorSpec({
             }
         }
     }
-})
+}
+)
 
 
 fun getGrade(obtainedMarks: Int, totalMarks: Int): String {

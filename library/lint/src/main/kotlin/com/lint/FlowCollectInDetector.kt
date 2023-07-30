@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-package com.example.checks
+package com.lint
 
 import com.android.tools.lint.detector.api.Category
 import com.android.tools.lint.detector.api.Detector
@@ -12,7 +12,7 @@ import com.android.tools.lint.detector.api.Scope
 import com.android.tools.lint.detector.api.Severity
 import com.android.tools.lint.detector.api.SourceCodeScanner
 import com.android.tools.lint.detector.api.isKotlin
-import com.example.checks.FlowCollectInDetector.Issues.FLOW_ISSUES
+import com.lint.FlowCollectInDetector.Issues.FLOW_ISSUES
 import com.intellij.psi.PsiMethod
 import com.intellij.psi.util.PsiTypesUtil
 import org.jetbrains.uast.UCallExpression

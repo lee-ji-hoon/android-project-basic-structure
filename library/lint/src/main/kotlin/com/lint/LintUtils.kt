@@ -1,4 +1,4 @@
-package com.example.checks
+package com.lint
 
 import com.android.tools.lint.detector.api.JavaContext
 import com.intellij.psi.PsiType

@@ -1,9 +1,8 @@
-package com.lyft.android.lint.checks
+package com.lint
 
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.CURRENT_API
 import com.android.tools.lint.detector.api.Issue
-import com.example.checks.FlowCollectInDetector
 
 @Suppress("unused")
 class IssueRegistry : IssueRegistry() {

@@ -1,6 +1,6 @@
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     id("structure.android.application")
+    id("structure.android.application.compose")
     id("structure.android.hilt")
     // TODO ksp 적용
 }
@@ -12,7 +12,6 @@ android {
         applicationId = "com.structure"
         versionCode = 1
         versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 }
 

@@ -1,8 +1,6 @@
 @file:Suppress("UnstableApiUsage")
-
 plugins {
     id("structure.android.library")
-    id("structure.android.library.compose")
     id("structure.android.hilt")
 }
 
@@ -21,10 +19,15 @@ android {
 
 dependencies {
 
-    api(libs.junit)
+    api(libs.dagger.hilt.android.compiler)
     api(libs.androidx.junit)
     api(libs.kotlin.coroutine.test)
-    api(libs.dagger.hilt.android.compiler)
     api(libs.mockk)
     api(libs.turbine)
+    api(libs.kotest.runner)
+    api(libs.kotest.assertions)
+}
+
+tasks.withType<Test>().configureEach {
+    useJUnitPlatform()
 }

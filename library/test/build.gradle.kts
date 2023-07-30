@@ -25,5 +25,6 @@ dependencies {
     api(libs.androidx.junit)
     api(libs.kotlin.coroutine.test)
     api(libs.dagger.hilt.android.compiler)
-
+    api(libs.mockk)
+    api(libs.turbine)
 }

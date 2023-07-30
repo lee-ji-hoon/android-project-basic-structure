@@ -1,7 +1,7 @@
 
-import com.android_project_basic_structure.convention.implementation
-import com.android_project_basic_structure.convention.kapt
-import com.android_project_basic_structure.convention.libs
+import com.structure.convention.implementation
+import com.structure.convention.kapt
+import com.structure.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension

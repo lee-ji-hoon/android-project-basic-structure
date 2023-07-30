@@ -1,10 +1,10 @@
 plugins {
-    id("android-project-basic-structure.android.library")
-    id("android-project-basic-structure.android.hilt")
+    id("structure.android.library")
+    id("structure.android.hilt")
 }
 
 android {
-    namespace = "com.android_project_basic_structure.data"
+    namespace = "com.structure.data"
 }
 
 dependencies {

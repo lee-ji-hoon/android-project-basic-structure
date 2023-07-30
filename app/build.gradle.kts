@@ -1,15 +1,15 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    id("android-project-basic-structure.android.application")
-    id("android-project-basic-structure.android.hilt")
+    id("structure.android.application")
+    id("structure.android.hilt")
     // TODO ksp 적용
 }
 
 android {
-    namespace = "com.android_project_basic_structure"
+    namespace = "com.structure"
 
     defaultConfig {
-        applicationId = "com.android_project_basic_structure"
+        applicationId = "com.structure"
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -18,4 +18,8 @@ android {
 
 dependencies {
     lintChecks(project(":library:lint"))
+
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.material)
 }

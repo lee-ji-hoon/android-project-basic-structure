@@ -1,6 +1,6 @@
 import com.android.build.api.dsl.ApplicationExtension
-import com.android_project_basic_structure.convention.ProjectConfigurations
-import com.android_project_basic_structure.convention.configureKotlinAndroid
+import com.structure.convention.ProjectConfigurations
+import com.structure.convention.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

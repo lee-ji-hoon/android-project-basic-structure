@@ -17,7 +17,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "android-project-basic-structure"
+rootProject.name = "structure"
 include(":app")
 include(":core")
 include(":core:model")

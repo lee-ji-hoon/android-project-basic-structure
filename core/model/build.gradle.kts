@@ -1,10 +1,10 @@
 plugins {
-    id("android-project-basic-structure.android.library")
+    id("structure.android.library")
     alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.android_project_basic_structure.model"
+    namespace = "com.structure.model"
 }
 
 dependencies {

@@ -1,6 +1,6 @@
 import com.android.build.gradle.LibraryExtension
-import com.android_project_basic_structure.convention.configureAndroidCompose
-import com.android_project_basic_structure.convention.configureKotlinAndroid
+import com.structure.convention.configureAndroidCompose
+import com.structure.convention.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

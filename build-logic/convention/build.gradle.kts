@@ -3,7 +3,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.android-project-basic-structure.buildlogic"
+group = "com.structure.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -19,27 +19,27 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "android-project-basic-structure.android.application"
+            id = "structure.android.application"
             implementationClass = "AndroidConventionPlugin"
         }
         register("androidApplicationCompose") {
-            id = "android-project-basic-structure.android.application.compose"
+            id = "structure.android.application.compose"
             implementationClass = "AndroidComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "android-project-basic-structure.android.library"
+            id = "structure.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidLibraryCompose") {
-            id = "android-project-basic-structure.android.library.compose"
+            id = "structure.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidHilt") {
-            id = "android-project-basic-structure.android.hilt"
+            id = "structure.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
         register("androidFeature") {
-            id = "android-project-basic-structure.android.feature"
+            id = "structure.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
     }

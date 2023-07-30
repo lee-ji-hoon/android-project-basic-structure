@@ -17,7 +17,7 @@ android {
 
 dependencies {
     lintChecks(project(":library:lint"))
-    implementation(projects.library.test)
+    testImplementation(projects.library.test)
 
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)

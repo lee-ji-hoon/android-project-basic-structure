@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.structure.library.lint"
+    namespace = "com.structure.domain"
 }
 
 dependencies {

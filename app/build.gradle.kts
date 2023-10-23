@@ -1,6 +1,6 @@
 plugins {
-    id("structure.android.application")
     id("structure.android.application.compose")
+    id("structure.android.application")
     id("structure.android.hilt")
     // TODO ksp 적용
 }

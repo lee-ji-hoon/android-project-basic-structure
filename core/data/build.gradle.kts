@@ -1,6 +1,7 @@
 plugins {
     id("structure.android.library")
     id("structure.android.hilt")
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {

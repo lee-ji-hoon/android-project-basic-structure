@@ -1,4 +1,3 @@
-@file:Suppress("UnstableApiUsage")
 plugins {
     id("structure.android.library")
     id("structure.android.hilt")

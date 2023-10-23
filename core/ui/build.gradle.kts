@@ -5,18 +5,16 @@ plugins {
 }
 
 android {
-    namespace = "com.structure.sample"
+    namespace = "com.structure.ui"
 }
 
 dependencies {
-    testImplementation(projects.library.test)
-
-    implementation(projects.core.domain)
-    implementation(projects.core.ui)
 
     implementation(libs.androidx.compose.activity)
     implementation(libs.material)
     implementation(libs.dagger.hilt.android)
     implementation(libs.androidx.compose.navigation)
     implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.coil.compose)
+    implementation(libs.lottie.compose)
 }
